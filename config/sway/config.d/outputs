@@ -1,6 +1,6 @@
 # Default Background
 output * {
-	background $dir_base/background.png fill
+	background $dir_base/background.jpg fill
 }
 
 include $dir_conf/outputs.d/*
