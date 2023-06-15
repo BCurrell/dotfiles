@@ -1,0 +1,27 @@
+###
+#  Window Control Binds
+###
+bindsym {
+	Mod1+F4 kill
+	F11 fullscreen
+}
+
+###
+#  Window Move Binds
+###
+bindsym {
+	$mod_move+Left move left
+	$mod_move+Right move right
+	$mod_move+Up move up
+	$mod_move+Down move down
+}
+
+###
+#  Floating Windows
+###
+floating_modifier $mod normal
+
+bindsym {
+	# Toggle window between floating and windowed
+	$mod_move+Space floating toggle
+}

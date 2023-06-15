@@ -1,0 +1,15 @@
+###
+#  Default Applications
+###
+set {
+	$app_terminal alacritty
+}
+
+###
+#  
+###
+bindsym {
+	$mod+Return exec $app_terminal
+}
+
+include $dir_conf/applications.d/*

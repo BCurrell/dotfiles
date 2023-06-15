@@ -1,0 +1,14 @@
+###
+#  Focus Binds
+###
+bindsym {
+	$mod+Left focus left
+	$mod+Right focus right
+	$mod+Up focus up
+	$mod+Down focus down
+
+	$mod+a focus parent
+	# Toggle focus between windowed and floating windows
+	$mod+Space focus mode_toggle
+}
+

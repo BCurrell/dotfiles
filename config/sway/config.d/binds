@@ -1,0 +1,10 @@
+###
+#  Sway System Binds
+###
+bindsym {
+	$mod_system+c reload
+	$mod_system+r restart
+	$mod_system+q exec swaymsg exit
+}
+
+include $dir_conf/binds.d/*

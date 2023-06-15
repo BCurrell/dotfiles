@@ -1,0 +1,23 @@
+output "BNQ BenQ GL2460 29F02883SL0" {
+	# Left, vertical
+	resolution 1920x1080@60hz
+	transform 90
+	pos 0 0
+}
+
+output "BNQ BenQ GL2460 29F02993SL0" {
+	# Right, horizontal
+	resolution 1920x1080@60hz
+	pos 1080 420
+}
+
+workspace 1 output "BNQ BenQ GL2460 29F02883SL0"
+workspace 2 output "BNQ BenQ GL2460 29F02883SL0"
+workspace 3 output "BNQ BenQ GL2460 29F02883SL0"
+workspace 4 output "BNQ BenQ GL2460 29F02883SL0"
+workspace 5 output "BNQ BenQ GL2460 29F02883SL0"
+workspace 6 output "BNQ BenQ GL2460 29F02993SL0"
+workspace 7 output "BNQ BenQ GL2460 29F02993SL0"
+workspace 8 output "BNQ BenQ GL2460 29F02993SL0"
+workspace 9 output "BNQ BenQ GL2460 29F02993SL0"
+workspace 10 output "BNQ BenQ GL2460 29F02993SL0"

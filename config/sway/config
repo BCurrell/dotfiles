@@ -1,0 +1,28 @@
+###
+#  Modifier Keys
+###
+# Shift
+# Lock -> Caps Lock
+# Ctrl
+# Mod1 -> Alt
+# Mod2 -> Num Lock
+# Mod3 -> ?
+# Mod4 -> Super, Logo
+# Mod5 -> ?
+
+###
+#  Global Settings
+###
+set {
+	$dir_base ~/.config/sway
+	$dir_conf $dir_base/config.d
+
+	# Default modifier key
+	$mod Mod4
+	# System bind modifier key
+	$mod_system $mod+Shift
+	# Window move modifier key
+	$mod_move $mod+Mod1
+}
+
+include $dir_conf/*

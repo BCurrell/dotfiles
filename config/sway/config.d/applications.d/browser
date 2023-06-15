@@ -1,0 +1,3 @@
+set $app_browser flatpak run org.mozilla.firefox
+
+bindsym $mod+b exec $app_browser

@@ -1,0 +1,31 @@
+###
+#  Workspace Switch Binds
+###
+bindsym {
+	$mod+1 workspace number 1
+	$mod+2 workspace number 2
+	$mod+3 workspace number 3
+	$mod+4 workspace number 4
+	$mod+5 workspace number 5
+	$mod+6 workspace number 6
+	$mod+7 workspace number 7
+	$mod+8 workspace number 8
+	$mod+9 workspace number 9
+	$mod+0 workspace number 10
+}
+
+###
+#  Workspace Move Binds
+###
+bindsym {
+	$mod_move+1 move container to workspace number 1
+	$mod_move+2 move container to workspace number 2
+	$mod_move+3 move container to workspace number 3
+	$mod_move+4 move container to workspace number 4
+	$mod_move+5 move container to workspace number 5
+	$mod_move+6 move container to workspace number 6
+	$mod_move+7 move container to workspace number 7
+	$mod_move+8 move container to workspace number 8
+	$mod_move+9 move container to workspace number 9
+	$mod_move+0 move container to workspace number 10
+}

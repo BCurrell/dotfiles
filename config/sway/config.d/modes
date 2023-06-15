@@ -1,0 +1,8 @@
+###
+#  Modes
+###
+include $dir_conf/modes.d/*
+
+bindsym {
+	$mod+r mode $mode_resize
+}

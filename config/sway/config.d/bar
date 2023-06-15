@@ -1,0 +1,7 @@
+###
+#  Temporary Default Bar
+###
+bar {
+	id 1
+	position top
+}

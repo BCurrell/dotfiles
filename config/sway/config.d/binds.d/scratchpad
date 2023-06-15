@@ -1,0 +1,7 @@
+###
+#  Scratchpad Binds
+###
+bindsym {
+	$mod_move+KP_Add move scratchpad
+	$mod_move+KP_Subtract scratchpad show
+}

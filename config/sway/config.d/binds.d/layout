@@ -1,0 +1,14 @@
+###
+#  Layout Binds
+###
+bindsym {
+	# Split window horizontally
+	$mod+h splith
+	# Split window vertically
+	$mod+v splitv
+	# Toggle split
+	$mod+l layout toggle split
+
+	$mod+s layout stacking
+	$mod+t layout tabbed
+}

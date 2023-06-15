@@ -1,0 +1,21 @@
+###
+#  Default Keyboard Settings
+###
+input "type:keyboard" {
+	# Numlock default to on
+	xkb_numlock enabled
+
+	# Language default to gb
+	xkb_layout "gb"
+}
+
+###
+#  Default Mouse Settings
+###
+input "type:pointer" {
+	# TODO: Investigate if I actually need these
+	accel_profile adaptive
+	pointer_accel 0.2
+}
+
+include $dir_conf/inputs.d/*
