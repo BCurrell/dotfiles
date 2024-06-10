@@ -18,4 +18,20 @@ input "type:pointer" {
 	pointer_accel 0.2
 }
 
+###
+#  Default Touchpad Settings
+###
+input "type:touchpad" {
+	# TODO: Investigate if I actually need these
+	accel_profile adaptive
+	pointer_accel 0.2
+	tap enabled
+	click_method button_areas
+	drag enabled
+	dwt enabled
+	middle_emulation disabled
+	natural_scroll enabled
+	scroll_method two_finger
+}
+
 include $dir_conf/inputs.d/*
