@@ -1,0 +1,15 @@
+[Unit]
+Description=Audio effects for PipeWire applications
+After=graphical-session.target pipewire.service
+PartOf=graphical-session.target
+
+[Service]
+ExecStart=/bin/flatpak --user run com.github.wwmm.easyeffects --gapplication-service
+ExecStop=/bin/flatpak --user run com.github.wwmm.easyeffects --quit
+Nice=-15
+Restart=always
+RestartSec=3
+TimeoutStopSec=5
+
+[Install]
+WantedBy=graphical-session.target
