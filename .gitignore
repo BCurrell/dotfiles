@@ -5,8 +5,11 @@
 
 !config/
 
-!config/sway/
-!config/sway/**
+!config/alacritty/
+!config/alacritty/alacritty.yaml
 
 !config/htop/
 !config/htop/htoprc
+
+!config/sway/
+!config/sway/**

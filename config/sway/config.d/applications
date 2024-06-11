@@ -2,7 +2,7 @@
 #  Default Applications
 ###
 set {
-	$app_terminal alacritty
+	$app_terminal alacritty --config-file ~/.config/alacritty/alacritty.yaml
 }
 
 ###
