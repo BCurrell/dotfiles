@@ -1,3 +1,4 @@
-set $app_browser flatpak --user run org.mozilla.firefox
+#set $app_browser flatpak --user run org.mozilla.firefox
+set $app_browser firefox-bin
 
 bindsym $mod+b exec $app_browser
