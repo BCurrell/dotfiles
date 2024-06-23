@@ -13,18 +13,6 @@
 
 !config/systemd/
 !config/systemd/user/
-!config/systemd/user/easyeffects.service
-!config/systemd/user/mako.service
-!config/systemd/user/mpd.service
-!config/systemd/user/swayidle.service
-!config/systemd/user/swaylock.service
-!config/systemd/user/sway.service
-!config/systemd/user/sway-session-pre.target
-!config/systemd/user/sway-session-shutdown.target
-!config/systemd/user/sway-session.target
-!config/systemd/user/waybar.service
-!config/systemd/user/wayland-session-pre.target
-!config/systemd/user/wayland-session.target
 
 !config/sway/
 !config/sway/**
