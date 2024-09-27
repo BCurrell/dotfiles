@@ -1,10 +1,31 @@
 ###
-#  Based on https://github.com/swaywm/sway/wiki/Systemd-integration
+#  Target used to group Sway compositor-related services
+#
+#  This is a special service, but not the systemd definition of special.
+#  First, it binds to graphical-session.target, meaning if this target
+#  is started, it will start graphical-session.target as well. In order
+#  for the reverse to be true, you will need to enable this target. When
+#  enabled, starting graphical-session.target will start this one.
+#
+#  Both graphical-session.target and sway-session.target will block manual
+#  start attempts. The only way to start them is from a dependency. A
+#  deskto manager (like gddm, sdm, etc) will handle the start of
+#  graphical-session.target. Or you can create a service that depends on
+#  sway-session.target, start that and it will cascade through from the other
+#  direction.
+#
+#  By binding to graphical-session.target, we are already including
+#  graphical-session-pre.target. We also include sway-session-pre.target
+#  from this target. This means we can use sway-session.target as the single
+#  entrypoint for any sway-related services.
 ###
 [Unit]
 Description = Sway compositor session
 Documentation = man:systemd.special(7)
+RefuseManualStart = yes
+StopWhenUnneeded = yes
 
 BindsTo = graphical-session.target
-Wants = graphical-session-pre.target
-After = graphical-session-pre.target
+
+Wants = sway-session-pre.target
+After = sway-session-pre.target

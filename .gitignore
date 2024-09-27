@@ -6,7 +6,7 @@
 !config/
 
 !config/alacritty/
-!config/alacritty/alacritty.yaml
+!config/alacritty/alacritty.toml
 
 !config/htop/
 !config/htop/htoprc
