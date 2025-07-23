@@ -8,13 +8,14 @@ Collection of user configuration files for (mostly) Linux systems.
 - Run the below commands:
 
 ```none
-ln -sf ~/dotfiles/profile ~/.profile
-ln -sf ~/dotfiles/profile.d ~/.profile.d
+ln -sn ~/dotfiles/profile ~/.profile
+ln -sn ~/dotfiles/profile.d ~/.profile.d
 
-ln -sf ~/dotfiles/bashrc ~/.bashrc
-ln -sf ~/dotfiles/bashrc.d ~/.bashrc.d
+ln -sn ~/dotfiles/bashrc ~/.bashrc
+ln -sn ~/dotfiles/bashrc.d ~/.bashrc.d
 
 mkdir -p ~/.config
 
-ln -sf ~/dotfiles/config/htop ~/.config/htop
+rm -rf ~/.config/htop
+ln -sn ~/dotfiles/config/htop ~/.config/htop
 ```
