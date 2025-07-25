@@ -1,25 +1,35 @@
-# If not running interactively, do nothing
-if [ -z "${PS1}" ]
-then
-	return
-fi
+###
+#  .profile, sourced by login shells
+#
+#  For flexibility, do not add any config directly to this file. Instead,
+#  add individual config files with a .conf suffix to the directory defined
+#  by ${PROFILE_D} below.
+#
+#  TODO: Should ${PROFILE_D} point to the dotfiles directory, or something
+#  in the home directory?
+###
 
-# TODO: Just read this directory from dotfiles?
+# The directory to source config files from
 PROFILE_D="${HOME}/.profile.d"
 
-# This file is only used to source any individual config files in ${PROFILE_D}
-# Create any config files in ${PROFILE_D} with a .conf suffix
-
+# Check that the directory exists
 if [ -d "${PROFILE_D}" ]
 then
+	# Loop over any files or folders in the directory with a .conf suffix
 	for F in "${PROFILE_D}"/*.conf
 	do
-		if [ -r "${F}" ]
+		# Check that the path is a file and is readable
+		if [ -f "${F}" ] && [ -r "${F}" ]
 		then
+			# Source the config file
 			# shellcheck source=/dev/null
 			. "${F}"
 		fi
 	done
 
+	# Unset the path variable when finished
 	unset F
 fi
+
+# Unset the directory variable when finished
+unset PROFILE_D
