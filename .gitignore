@@ -12,6 +12,9 @@
 !config/htop/
 !config/htop/htoprc
 
+!config/systemd/
+!config/systemd/**
+
 !profile
 !profile.d/
 !profile.d/*
