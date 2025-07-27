@@ -35,7 +35,7 @@ Add anything specific to an interactive Bash shell. For example:
 
 Sourced by most shells during login, including Bash if `.bash_profile` doesn't exist. A good home for configuring multiple shell types from 1 location. This also gets loaded by some display managers when running a desktop environment, however there is no standard for this so it is not guaranteed.
 
-Add anything here that needs loading once and early. Since non-interactive shells don't load interface shell configs, add anything you may need in a non-interactive shell, like running a script. Some examples:
+Add anything here that needs loading once and early. Since non-interactive shells don't load interactive shell configs (like `.bashrc`), add anything you may need in a non-interactive shell, like running a script. Some examples:
 
 - Default shell settings
 - `PATH` variable
