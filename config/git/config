@@ -1,0 +1,7 @@
+[user]
+	name = Brandon Currell
+	email = brandon+git@currell.pw
+[init]
+	defaultBranch = main
+[pull]
+	rebase = true

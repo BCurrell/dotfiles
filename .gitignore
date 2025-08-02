@@ -9,6 +9,9 @@
 
 !config/
 
+!config/git/
+!config/git/config
+
 !config/htop/
 !config/htop/htoprc
 

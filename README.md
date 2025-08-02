@@ -16,6 +16,7 @@ rm -rf ~/.bashrc.d && ln -sn ~/dotfiles/bashrc.d ~/.bashrc.d
 
 mkdir -p ~/.config
 
+rm -rf ~/.config/git && ln -sn ~/dotfiles/config/git ~/.config/git
 rm -rf ~/.config/htop && ln -sn ~/dotfiles/config/htop ~/.config/htop
 rm -rf ~/.config/systemd && ln -sn ~/dotfiles/config/systemd ~/.config/systemd
 ```
